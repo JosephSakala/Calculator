@@ -229,12 +229,27 @@ int main()
         cout<<num1<<" divided by "<<num2<<" the remainder is = "<<remainder(num1, num2);//function responsible for displaying the answer called
 
     }
-    else{cout<<"Please enter a valid sign!";}
+    else{cout<<"You have entered an invalid option\n!";}
 
     }
     //this is displayed if the user has not selected amoung the available options i.e 1,2,3, 4 and 99.
-    else{cout<<"You have selected an invalid option\n";}///this is displayed if the user does not comply with th available optionsaaaa
+    else{cout<<"You have selected an invalid option\n";}///this is displayed if the user does not comply with th available options
+        
+        cout<<"Would you like to proceed with this calculations?\n";
+        cout<<"1.Yes\n";
+        cout<<"Press any key to exit\n";
+        
+        cin>>x;
+        if(x==1)
+        {
+                cout<<main();
+        }
 
+        else
+        {
+                ("cls");//clear screen or exit
+                
+        }
 
     return(0);
 
