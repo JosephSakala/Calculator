@@ -103,19 +103,22 @@ int main()
 
     int hight, base,width; //hight, base and width of shape in question a respecttively
     float R;//raduis of the sphere
-    int a; //user option
+    int a; //users first options
     char op;//this will represent an operator a user will enter i.e either '-','+','*' or '/'
     int num1, num2;
     int length, breadth;
     float minutes;
+    int x;//users second options
 
+        //USER'S FIRST OPTIONS TO CHOOSE FROM
     cout<<"What are you working with?\n";
     cout<<"1.Triangle.\n"; //users second option
     cout<<"2.Sphere.\n"; //users first option
     cout<<"3.Rectangle.\n"; //user third option
     cout<<"4.Hours calculations\n";
     cout<<"Select 99 to procceed to the normal calculator\n";
-
+        
+    
     cin>>a; //user enters their option of choice that is either 1, 2 or 3.
 
 
@@ -178,6 +181,7 @@ int main()
 
     ///CALCULATIONS OF NORMAL CALCULATIONS
     else if(a==99){cout<<"**********This is a calculator**********\n";
+        cout<<"\n";
         cout<<"Kindly enter a sign you wish to use\n";
         cin>>op;
 
@@ -229,17 +233,23 @@ int main()
         cout<<num1<<" divided by "<<num2<<" the remainder is = "<<remainder(num1, num2);//function responsible for displaying the answer called
 
     }
-    else{cout<<"You have entered an invalid option\n!";}
+    else{cout<<"You have entered an invalid option!\n";}
+                   
+    cout<<"\n";//space
 
     }
     //this is displayed if the user has not selected amoung the available options i.e 1,2,3, 4 and 99.
     else{cout<<"You have selected an invalid option\n";}///this is displayed if the user does not comply with th available options
         
+        cout<<"\n";//space
+        
         cout<<"Would you like to proceed with this calculations?\n";
         cout<<"1.Yes\n";
         cout<<"Press any key to exit\n";
         
-        cin>>x;
+        
+        //USER'S SECOND OPTIONS TO CHOOSE FROM
+        cin>>x;//user second options
         if(x==1)
         {
                 cout<<main();
