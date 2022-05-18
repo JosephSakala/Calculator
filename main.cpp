@@ -72,9 +72,9 @@ int prodtwo(int num1, int num2)//multiplying two numbers
     return(product);
 }
 
-int divtwo(int num1, int num2)//dividing two numbers
+float divtwo(float num1, float num2)//dividing two numbers
 {
-    int quotient= num1/num2;
+    float quotient= num1/num2;
     return quotient;
 }
 
